@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 120vh;
+    background-image: linear-gradient(
+    45deg,
+    hsl(0deg 0% 2%) 0%,
+    hsl(224deg 35% 4%) 8%,
+    hsl(221deg 40% 5%) 17%,
+    hsl(220deg 41% 7%) 25%,
+    hsl(219deg 41% 8%) 33%,
+    hsl(218deg 45% 9%) 42%,
+    hsl(219deg 41% 8%) 50%,
+    hsl(219deg 41% 8%) 58%,
+    hsl(219deg 41% 8%) 67%,
+    hsl(220, 49%, 8%) 75%,
+    hsl(221, 44%, 10%) 83%,
+    hsl(221, 47%, 12%) 92%,
+    hsl(220, 73%, 7%) 100%
+);
+
+    
+}
+h2 {
+    display: block;
+    position: absolute;
+    margin-bottom: 560px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    
+}
+.container a {
+    display: block;
+    text-shadow: #03e9f4;
+    position: absolute;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+    margin-left: 220px;
+    padding-left: 108px;
+    padding-right: 108px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -100px;
+    transition: 0.3s;
+    text-decoration: none;
+    overflow: hidden;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(90deg, #5a74d4, 
+    #737983, #386b88, 
+    #899be4, #1a3572, 
+    #0556f9);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position:400%;
+    }
+}
+.container a span {
+    position: absolute;
+    display: block;
+
+}
+.container a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+.container a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+.container a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+.container a span:nth-child(4) {
+    bottom: 100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+.Week1 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -40px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 1 forwards;
+}
+.Week2 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -120px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.2s 1 forwards;
+}
+.Week3 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -200px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.4s 1 forwards;
+}
+.Week4 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -280px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.5s 1 forwards;
+}
+.Week5 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -360px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.6s 1 forwards;
+}
+.Week6 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -440px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.7s 1 forwards;
+}
+.Week7 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -520px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.8s 1 forwards;
+}
+.Week8 {
+    color: white;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    margin-bottom: -610px;
+    margin-right: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: blink 1s ease-in-out 0.9s 1 forwards;
+}
+
+table {
+    box-shadow: 0 10px 50px rgb(14, 5, 5);
+    
+    margin-bottom: -280px;
+    cursor: pointer;
+    
+    border-radius: 4px;
+}
+tr th {
+    background-color: rgb(19, 45, 58);
+    color: white;
+    border: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+tr td {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+}
+tr td:hover {
+    background-color: #ccc;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+    border: 1px solid white;
+}
+.name {
+    text-align: center;
+    display: block;
+    position: absolute;
+    font-size: 90px;
+    background-color: transparent;
+    margin-bottom: 560px;
+    padding-left: 510px;
+    padding-right: 510px;
+    padding-top: 130px;
+    padding-bottom: 180px;
+    backdrop-filter: blur(100000px);
+    border-radius: 20px;
+    border: 1px solid rgb(46, 98, 98);
+}
+img:hover {
+    transition: all 0.1s ease-in-out;
+    background: transparent;
+    border: 3px solid #f39c12;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.radio {
+    position: absolute;
+    margin-bottom: 290px;
+    
+}
+.time {
+    position: absolute;
+    margin-bottom: 120px;
+    margin-left: 720px;
+}
+.time input {
+    background-color: #505050;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+}
+.time input:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #505050;
+}
+.imgone {
+    margin-top: -590px;
+    position: absolute;
+    margin-left: -800px;
+}
+.imgone img{
+    
+    width: 160px; 
+    height: 230px; 
+    border-radius:10px;
+    animation: blink 1s ease-in-out 1 forwards;
+}
+
+.imgtwo {
+    margin-top: -590px;
+    position: absolute;
+    margin-left: -400px;
+}
+.imgtwo img{
+    
+    width: 160px; 
+    height: 230px; 
+    border-radius:10px;
+    animation: blink 1s ease-in-out 0.2s 1 forwards;
+}
+
+.imgthree {
+    margin-top: -590px;
+    position: absolute;
+    margin-left: 0px;
+}
+.imgthree img{
+    
+    width: 160px; 
+    height: 230px; 
+    border-radius:10px;
+    animation: blink 1s ease-in-out 0.4s 1 forwards;
+}
+
+.imgfour {
+    margin-top: -590px;
+    position: absolute;
+    margin-left: 400px;
+}
+.imgfour img{
+     
+    width: 160px; 
+    height: 230px; 
+    border-radius:10px;
+    animation: blink 1s ease-in-out 0.6s 1 forwards;
+}
+
+.imgfive {
+    margin-top: -590px;
+    position: absolute;
+    margin-left: 800px;
+}
+.imgfive img{
+    
+    width: 160px; 
+    height: 230px; 
+    border-radius:10px; 
+    opacity:60%;
+    animation: blink 1s ease-in-out 0.8s 1 forwards;
+}
+
+.imgsix {
+    margin-top: -590px;
+    position: absolute;
+    margin-left: 1200px;
+}
+.imgsix img{
+    
+    width: 160px; 
+    height: 230px; 
+    border-radius:10px; 
+    opacity:58%;
+    animation: blink 1s ease-in-out 0.9s 1 forwards;
+}
+.submit a {
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 290px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 110px;
+    padding-left: 110px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+}
+.submit a:hover {
+    background-color: rgb(19, 45, 58);
+    color: white;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+.submit a span {
+    position: absolute;
+    display: block;
+
+}
+.submit a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+.submit a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+.submit a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+.submit a span:nth-child(4) {
+    bottom: 100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}

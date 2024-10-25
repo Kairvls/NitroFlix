@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background: white;
+            background-image: url(jap.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        nav .logo a {
+            font-size: 26px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        nav .logo a:hover {
+            color: azure;
+            transition: 0.5s;
+        }
+        nav ul {
+            align-items: center;
+            display: flex;
+            gap: 2.5rem;
+        }
+        nav ul li {
+            list-style-type: none;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            color: aqua;
+            transition: 0.5s;
+            padding: 5px;
+            background-color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+   <nav>
+        <div class="logo">
+            <a href="#">html</a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+   </nav>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-box-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
+          </svg><h2></h2>
+    <nav class="navigation"></nav>
+            <a href="upcoming.html">Upcoming</a>
+            <a href="lists.html">Lists</a>
+            <a href="popular.html">Trending </a>
+            <a href="Popular.html" button type="back-btn">Feedbacks</a>
+            <a href="./video/tiktokfirst.mp4">Account</a>
+    </nav>
+</header>       
+    
+        <video autoplay muted style="border-radius: 20px; border:2px solid aqua; cursor:pointer; width:1010px; height:580px"
+        loop id="granvid">
+        <source src="video/grantour1.mp4" type="video/mp4" >
+        </video>
+    <section>
+        <img src="loginimg/pandaa.png" class="panda" alt="img" style="float: left; position:absolute; width:70px; height:70px; margin-top:-490px ">
+        <img src="loginimg/nitroflix.png" alt="img" style="float: left; position:absolute; width:200px; margin-top:-10px; opacity:20%; margin-top:-490px; width:200px">
+        <img src="loginimg/newlogin.jpg" alt="img" style="float:left; position: absolute; margin-left:0px; width:300px; height:200px; margin-top:-10px; opacity:0%; border-radius:10px;">
+        
+        <div class="form-container">
+        <form id="login-form">
+            <h1>Login</h1>
+            <div class="inputbox"><svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              </svg>
+                <ion-icon name="email-outline"></ion-icon>
+                <input type="text" id="login-username"required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox"><svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-lock" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
+              </svg>
+                <ion-icon name="password-outline"></ion-icon>
+                <input type="password" id="login-password"required>
+                <label for="">Password</label>
+            </div> 
+            <div class="forget">
+                <label for=""><input type="checkbox">Remember me</label>
+                <a href="#">Forget Password?</a>
+            </div>
+            
+            <button type="button" id="login-btn">
+                <a href="dashboard.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+                </a>
+            </button>
+            
+            <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+            </form>
+
+            <form id="register-form" style="display: none;">
+                <h2>Register</h2>
+                <div class="register"><svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+                    <ion-icon name="email-outline"></ion-icon>
+                    <input type="text" id="register-username"required>
+                    <label for="">Email</label>
+                </div>
+                <div class="register"><svg xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-lock" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1"/>
+                  </svg>
+                    <ion-icon name="password-outline"></ion-icon>
+                    <input type="password" id="register-password"required>
+                    <label for="">Password</label>
+                </div> 
+
+                <button type="button1" id="register-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Register
+                </button>
+                <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+        </form>
+    </div>
+    </section>
+    
+    
+    <script src="scripts.js"></script>
+
+</body>
+</html>

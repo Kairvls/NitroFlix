@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            flex-direction: column;
+            display: flex;
+            min-height: 100vh;
+            line-height: 1.6;
+            background-color: aquamarine;
+        }
+        .container{
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 300px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: antiquewhite;
+            padding-left: 20px;
+        }
+        .sidebar h2{
+            margin-bottom: 20px;
+        }
+        .sidebar nav li {
+            margin-bottom: 10px;
+        }
+        .sidebar nav li a{
+            align-items: center;
+        }
+        .sidebar a:hover{
+            background-color: white;
+            background: black;
+        }
+        .main {
+            background: darkgray;
+            margin-left: 250px;
+            padding: 20px;
+            flex: 1;
+        }
+        .header{
+            margin-bottom: 20px;
+            color: darkgoldenrod;
+            color: aliceblue;
+            text-align: center;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .dashboard-box{
+            font-weight: bold;
+            margin-right: 10px;
+            padding-right: 20px;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h1>DASHBOARD</h1>
+                <input type="search" id="search-input">
+                <ul>
+                    <li><a href="#">DEPARTMENT</a></li>
+                    <li><a href="#">EMPLOYEE</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <header>
+                <h2>ADMIN DASHBOARD</h2>
+            </header>
+            <section class="dashboard">
+                <div class="dashboard-box">
+                    <h1>EMPLOYEE</h1>
+                    <input type="text" id="employee-total" placeholder="HOW MANY EMPLOYEE">
+                </div>
+                    
+                <div class="dashboard-box">
+                    <h1>CHECKIN</h1>
+                    <input type="text" id="checkin-total" placeholder="CHECK IN TOTAL">
+                </div>
+            </section>
+        </main>
+    </div>
+    <img src="" alt="img" style="float:right; position: absolute; margin-left:620px; height:410px; opacity:50%; border-radius:15px">
+    <img src="" alt="img" style="float: left; position:absolute; margin-left:-620px; height:410px; opacity:50%; border-radius:15px">
+</body>
+</html>

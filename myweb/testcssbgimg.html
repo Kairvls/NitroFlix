@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-image: url(norli.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        section {
+            position: relative;
+            max-width: 400px;
+            background-color: transparent;
+            backdrop-filter: blur(55px);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 2rem 3rem;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .inputbox {
+            position: relative;
+            margin: 30px 0;
+            max-width: 250px;
+            border-bottom: 2px solid white;
+        }
+        .inputbox label {
+            position: absolute;
+            top: 65%;
+            left: 0px;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 1rem;
+            pointer-events: none;
+            transition: all 0.5s ease-in-out;
+            font-size: 14px;
+        }
+
+        input:focus ~ label,
+        input:valid ~ label {
+            top: -2px;
+        }
+        .inputbox input {
+            width: 100%;
+            height: 60px;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            padding: 0 35px 0 5px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text"
+        class="search-txt"
+        name=""
+        placeholder="Searchbox"
+        >
+        <a href="#" class="seach-btn">
+            <ion-icon name="search-outline"></ion-icon>
+        </a>
+    </div>
+    <section>
+        <form>
+            <h1>Login</h1>
+            <div class="inputbox">
+                <ion-icon name="email-outline"></ion-icon>
+                <input type="email"required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="password-outline"></ion-icon>
+                <input type="password"required>
+                <label for="">Password</label>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+<header>
+    <ul>
+        
+        <li><a href="">Movie Lists</a></li>
+        
+
+        
+        <li>
+            <a href="">Inbox</a>
+            <ul class="dropdown">
+                <li><a href="">Details</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Lists</a></li>
+            </ul>
+        </li>   
+        
+        <li><a href="">Items</a></li>
+
+
+        <li>
+            <a href="">Views</a>
+            <ul class="dropdown">
+                <li><a href="">Check</a></li>
+                <li><a href="">Balance</a></li>
+                <li><a href="">Server</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+    </header>
